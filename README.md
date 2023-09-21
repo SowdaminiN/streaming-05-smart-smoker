@@ -3,7 +3,7 @@
 
 ## Screenshot
 
-- [RabbitMQ - Admin Queues](https://www.rabbitmq.com/tutorials/tutorial-two-python.html)
+- [RabbitMQ - Admin Queues](https://github.com/SowdaminiN/streaming-05-smart-smoker/blob/main/Admin_UI.png)
 
 
 
