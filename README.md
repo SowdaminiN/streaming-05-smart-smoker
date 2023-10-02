@@ -21,6 +21,6 @@ collections 3.11.4
 ## Screenshot
 
 ![RabbitMQ - Admin Queues](https://github.com/SowdaminiN/streaming-05-smart-smoker/blob/main/Admin_UI.png)
-![RabbitMQ - Powershell Queues](https://github.com/SowdaminiN/streaming-05-smart-smoker/blob/main/Admin_UI.png)
+![RabbitMQ - Powershell Queues](https://github.com/SowdaminiN/streaming-05-smart-smoker/blob/main/Consol_Output.png)
 
 
