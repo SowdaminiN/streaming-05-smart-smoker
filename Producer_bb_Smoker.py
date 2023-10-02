@@ -50,6 +50,11 @@ def send_temp(host: str, queue_name1: str, queue_name2: str, queue_name3: str, m
             conn = pika.BlockingConnection(pika.ConnectionParameters(host))
             # use the connection to create a communication channel
             ch = conn.channel()
+
+            ch.queue_delete(queue=queue_name1)
+            ch.queue_delete(queue=queue_name2)
+            ch.queue_delete(queue=queue_name3)
+
             ch.queue_declare(queue=queue_name1, durable=True)
             ch.queue_declare(queue=queue_name2, durable=True)
             ch.queue_declare(queue=queue_name3, durable=True)
@@ -117,4 +122,4 @@ if __name__ == "__main__":
     # join by the space character inside the quotes
     message = " ".join(sys.argv[1:]) or '{MESSAGE}'
     # send the message to the queue
-    send_temp("localhost","smoker", "FoodA", "FoodB", message)
+    send_temp("localhost","01-smoker", "02-food-A", "02-food-B", message)
